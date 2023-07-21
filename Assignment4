@@ -106,8 +106,10 @@ worker-dd46d7584-t6vh6    1/1     Running   1          2m44s
 
 2. snapshot of logs (wherever possible)
 
+
 3. your comment on WHY result app STOPPED working after db pod stop
 --- Both the application pod used a socket connetion toward Db if socket break app restart.
+After deleting DB port we can see there are no votes the entire data get erased.
 
 4. your answer to HOW YOU MADE THE RESULT POD work. 
 ---After delation of the DB pod we lost the entire vote result , but DB pod will come up automatically and once DB pod is up you will get your appliction worked.
